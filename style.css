@@ -1,0 +1,27 @@
+/* add reset css stylings here first? */
+
+:root {
+  --grid-rows: 0;
+  --grid-cols: 0;
+}
+
+#container {
+  display: grid;
+  /* grid-gap: 1em; */
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 2em;
+  border: 3px solid #ddd;
+  text-align: center;
+  background-color: lightslategray;
+  transition: opacity 1s ease-out;
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: cubic-bezier(0.5, 1.0, 1.0, 0.1); */
+}
+
+.grid-item:hover {
+  opacity: 0;
+}
